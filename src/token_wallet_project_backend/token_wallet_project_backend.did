@@ -1,0 +1,8 @@
+type Wallet = record {
+    balance: int;
+};
+
+service : {
+    "send_tokens" : (principal, int) -> (text);
+    "balance_of" : (principal) -> (int);
+};
